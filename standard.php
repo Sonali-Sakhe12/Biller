@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="standard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Standard Invoice</title>
+</head>
+
+<body>
+        
+
+    <div class="head-invoice">
+        <div class="buton">
+        <?php 
+             require "button.php";
+        ?>
+        </div>
+        
+        <div class="first-line">
+            <div class="image-label">
+                <img src="icon.png" alt="icon">
+            </div>
+            <div class="invoice-top">
+                <div class="contain1">
+                    <h1>TAX INVOICE</h1>
+                    <p># INV-17</p>
+                </div>
+                <div class="contain2">
+                    <h4>Balance Due</h4>
+                    <p>₹605.60</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="address">
+            <h4>Hash Code</h4>
+            <li>Maharashtra</li>
+            <li>India</li>
+            <li>palaash.sarkar@gmail.com</li>
+            <li>GSTIN: 27EIAPS2086G1Z2</li>
+        </div>
+
+        <div class="address ">
+            <h4>Rob & Joe Traders</h4>
+            <li>34, Riche Street</li>
+            <li>Chennai</li>
+            <li>631603 Tamil Nadu</li>
+            <li>India</li>
+            <li>GSTIN 33GSPTN0372G1ZC</li>
+        </div>
+
+        <div class="container">
+            <div class="first">
+                <li>34, Riche Street</li>
+                <li>Chennai</li>
+                <li>631603 Tamil Nadu</li>
+                <li>India</li>
+                <li>GSTIN 33GSPTN0372G1ZC</li>
+            </div>
+            <div class="second">
+                <div class="details-key">
+                    <li>Invoice Date :</li>
+                    <li>Terms :</li>
+                    <li>Due Date :</li>
+                    <li>P.O.# :</li>
+                </div>
+                <div class="detail-value">
+                    <li>26/02/2024</li>
+                    <li>Due On Receipt</li>
+                    <li>26/02/2024</li>
+                    <li>SO-17</li>
+                </div>
+            </div>
+        </div>
+
+        <div class="supply">
+            <li>Place Of Supply: Tamil Nadu (33)</li>
+        </div>
+
+        <div class="sub-disc">
+            <li>Subject :</li>
+            <li>Description</li>
+        </div>
+
+        <table>
+            <tr class="table-row">
+                <th>#</th>
+                <th>Description</th>
+                <th>HSN/SAC</th>
+                <th>Qty</th>
+                <th>Rate</th>
+                <th>Discount</th>
+                <th>CGST</th>
+                <th>SGST</th>
+                <th>Amount</th>
+            </tr>
+            <tr class="table-data">
+                <td>1</td>
+                <td>
+                    <li class="line">Brochure Design</li>
+                    <li>Brochure Design Single</li>
+                    <li>Sided Color</li>
+                </td>
+                <td>52161559</td>
+                <td>1.00 <span>Nos</span></td>
+                <td>300.00</td>
+                <td>0.00</td>
+                <td>18.00 <span>12%</span></td>
+                <td>18.00 <span>12%</span></td>
+                <td>300.00</td>
+            </tr>
+
+            <tr class="table-data">
+                <td>2</td>
+                <td>
+                    <li class="line">Web Design Packages
+                        (Template) - Basic</li>
+                    <li>Custom Themes for your
+                        business. Inclusive of 10
+                        hours of marketing and
+                        annual training
+                    </li>
+                </td>
+                <td>52161559</td>
+                <td>1.00 <span>Nos</span></td>
+                <td>250.00</td>
+                <td>0.00</td>
+                <td>15.00 <span>12%</span></td>
+                <td>15.00 <span>12%</span></td>
+                <td>250.00</td>
+            </tr>
+
+            <tr class="table-data">
+                <td>3</td>
+                <td>
+                    <li class="line">Print Ad - Basic - Color</li>
+                    <li>Print Ad 1/8 size Color</li>
+                </td>
+                <td>52161559</td>
+                <td>1.00 <span>Nos</span></td>
+                <td>80.00</td>
+                <td>0.00</td>
+                <td>4.80 <span>12%</span></td>
+                <td>4.80 <span>12%</span></td>
+                <td>80.00</td>
+            </tr>
+        </table>
+
+
+        <div class="subtotalprice">
+            <div class="subtotal-key">
+                <li>Sub Total </li>
+                <li>Discount </li>
+                <li>CGST (12.00%) </li>
+                <li>SGST (12.00%) </li>
+            </div>
+            <div class="subtotal-value">
+                <li>630.00</li>
+                <li>0.00</li>
+                <li>37.80</li>
+                <li>37.80</li>
+            </div>
+        </div>
+
+
+
+        <div class="totalprice">
+            <div class="total-key">
+                <li><span>Total</span></li>
+                <li>Payment Made</li>
+            </div>
+            <div class="total-value">
+                <li><span>₹705.60</span></li>
+                <li>(-) 100.00</li>
+            </div>
+
+        </div>
+        <div class="balance">
+            <p>Balance Due</p>
+            <p>₹605.60</p>
+        </div>
+
+        <div class="totalword">
+            <li>Total in Word:</li>
+            <li>Indian Rupee Seven Hundred <br> Five and Sixty Paise Only</li>
+        </div>
+
+        <div class="last-option">
+            <p>Thanks for your business.</p>
+            <p>Payment Options <button><i class="fa-brands fa-paypal"></i> | <i
+                        class="fa-brands fa-cc-visa"></i></button></p>
+        </div>
+
+        <div class="footer">
+            <p>Your company's Terms and Conditions will be displayed here. You can add it in the Invoice Preferences
+                page under Settings.</p>
+            <hr>
+        </div>
+        <br>
+        <footer>
+        <img src="5.png" alt="" id="footimage" style="width:140px;height:53px;">
+        </footer>
+    </div>
+
+</body>
+
+</html>

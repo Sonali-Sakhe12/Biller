@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+:root {
+    --white-color: rgb(41, 34, 34);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.head-invoice {
+    background-color: #fff;
+    margin-top: 10px;
+}
+.head-invoice .buton{
+    margin: 20px 50px;
+}
+
+.first-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 50px;
+}
+
+.invoice-top {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+.contain1 {
+    text-align: end;
+}
+
+.contain1 p {
+    font-size: 13px;
+    color: var(--white-color);
+}
+
+.contain2 {
+    text-align: center;
+    margin-top: 13px;
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.contain2 h4 {
+    font-weight: 900;
+}
+
+.contain2 p {
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+.address {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 50px;
+    margin: 30px 50px;
+    position: relative;
+}
+
+.address h4 {
+    font-size: 16px;
+    color: var(--white-color);
+    font-weight: bolder;
+}
+
+.address li {
+    font-size: 13px;
+    color: var(--white-color);
+    list-style: none;
+}
+
+.address:nth-child(2) {
+    color: var(--white-color);
+}
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .first {
+    margin: 0px 50px;
+}
+
+.container>.first li {
+    list-style: none;
+    font-size: 14px;
+}
+
+.second {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second .details-key {
+    list-style: none;
+    font-size: 14px;
+    text-align: end;
+    margin: 0 30px;
+}
+
+.second .details-key li {
+    margin: 10px;
+}
+
+.second .detail-value {
+    list-style: none;
+    font-size: 14px;
+    text-align: end;
+    margin: 0 50px;
+}
+
+.second .detail-value li {
+    margin: 10px;
+}
+
+.supply {
+    list-style: none;
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+.sub-disc {
+    list-style: none;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+.supply li {
+    list-style: none;
+}
+
+.sub-disc li {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.sub-disc li:nth-child(1) {
+    color: #333333;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 50px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: none;
+    padding: 10px;
+    text-align: left;
+}
+
+.table-row {
+    border: none;
+    background-color: #3C3D3A;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.table-data {
+    border-bottom: 2px solid #747272;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.table-data td:nth-child(1) {
+    display: flex;
+}
+
+.table-data td {
+    vertical-align: text-top;
+}
+
+.table-data td span {
+    color: #747272;
+}
+
+.table-data td:nth-child(2) {
+    list-style: none;
+    width: 25%;
+}
+
+.table-data td .line {
+    color: black;
+}
+
+.table-data td li {
+    color: #747272;
+}
+
+.subtotalprice {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin: 0 50px;
+    border-bottom: 2px solid #747272;
+}
+
+.subtotalprice>.subtotal-key {
+    list-style: none;
+    text-align: end;
+}
+
+.subtotalprice>.subtotal-value {
+    list-style: none;
+    text-align: end;
+}
+
+.subtotal-key li {
+    margin-bottom: 20px;
+    margin-right: 80px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.subtotal-value li {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.totalprice {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-left:50px;
+    margin-right:50px;
+}
+
+.totalprice .total-key li {
+    list-style: none;
+    text-align: end;
+    margin-right: 80px;
+    padding: 10px 0;
+}
+
+.totalprice .total-value li {
+    list-style: none;
+    text-align: end;
+    margin-left: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.totalprice .subtotal-key li:nth-child(1) {
+    font-weight: 900;
+}
+
+.totalprice .subtotal-value li:nth-child(1) {
+    font-weight: 900;
+}
+
+.total-key span {
+    font-weight: bolder;
+}
+
+.total-value span {
+    font-weight: bolder;
+}
+.total-value li:nth-child(2){
+    color: #FF0000;
+}
+
+.total-value li:nth-child(3){
+    font-weight: bolder;
+    background: #F5F4F3;
+}
+.total-key li:nth-child(3){
+    font-weight: bolder;
+    background: #F5F4F3;
+}
+.balance{
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+    align-items: end;
+    margin-left: 51%;
+    background: #F5F4F3;
+    padding: 10px;
+    padding-left: 90px;
+}
+
+.totalword{
+    display: flex;
+    align-items: end;
+    list-style: none;
+    /* margin-left: 59%; */
+    justify-content: end;
+}
+.totalword li:nth-child(1){
+    vertical-align: text-top;
+    padding-bottom: 20px;
+    margin-right: 10px;
+    font-weight: 400;
+}
+.totalword li:nth-child(2){
+    flex-direction: column;
+    vertical-align: text-top;
+    font-style: italic;
+    font-weight: 600;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.last-option{
+    margin-left: 50px;
+    margin-top: 10%;
+}
+.last-option p:nth-child(1){
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.last-option p:nth-child(2){
+    font-size: 14px;
+    margin-top: 20px;
+}
+.last-option p button{
+    padding: 0px 10px;
+    margin-left: 5px;
+}
+
+.footer{
+    margin-left: 50px;
+    margin-top: 60px;
+
+}
+.footer p{
+    font-size: 12px;
+}
+.footer hr{
+    width: 30%;
+    margin-top: 20px;
+}
+#footimage{
+    margin-left: 25px;
+}
+
+@media print {
+    html,body .buton{
+        visibility: hidden;
+    }
+    .first-line{
+        visibility: visible;
+    }
+    .address , .container{
+        visibility: visible;
+    }
+    .supply , .sub-disc , table{
+        visibility: visible;
+    }
+    .subtotalprice , .totalprice{
+        visibility: visible;
+    }
+    .balance , .totalword{
+        visibility: visible;
+    }
+    .last-option , .footer{
+        visibility: visible;
+    }
+    footer{
+        visibility: visible;
+    }
+}

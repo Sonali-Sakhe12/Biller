@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Styles for upload button area */
+.upload-area {
+    margin-bottom: 20px;
+    border: 1px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    position: relative;
+    width: 200px;
+    overflow: hidden;
+}
+
+/* Styles for image preview containerr */
+.image-preview-containerr {
+    margin-top: 20px;
+    position: relative;
+    display: none;
+    /* Hide initially */
+}
+
+.image-preview {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(255, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.containerr {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 2px solid #f0d5d5;
+    margin-bottom: 5px;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    /* box-shadow: 0px 0px 12px 0px rgb(15, 14, 14); */
+}
+
+.header h3 {
+    font-weight: 500;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.header p {
+    padding: 9px 20px;
+    margin-left: 5px;
+    background: #F1F1FA;
+    color: black;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.main {
+    width: 60%;
+    padding-left: 18px;
+}
+
+.main>h6 {
+    color: #21263C;
+    font-size: 17px;
+    padding: 15px;
+    padding-left: 0px;
+}
+
+.editbuttons {
+    border-top: 2px solid #EEEEEE;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 15px;
+    padding-bottom: 1px;
+}
+
+#toggleButton {
+    padding: 6px 24px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.678);
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+
+#toggleButton:active {
+    background-color: #637891;
+}
+
+#toggleButton:hover {
+    background-color: #0f3869;
+}
+
+#toggleButton>.fa-solid {
+    margin-left: 8px;
+}
+
+#myForm {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.details>input {
+    width: 60%;
+    margin: 10px 0px;
+    padding: 10px 10px;
+    outline: none;
+    border: 1px solid #D7D5E2;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: white;
+}
+
+
+.address>.supply {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.863);
+    font-weight: 500;
+}
+
+.details>label {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.adddetail {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    margin-left: 0px;
+}
+
+.adddetail>input,
+textarea {
+    width: 60%;
+    margin: 5px 0px;
+    padding: 10px 10px;
+    outline: none;
+    border: 1px solid #D7D5E2;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: white;
+}
+
+#stateSelect {
+    width: 60%;
+    margin: 5px 0px;
+    padding: 10px 10px;
+    outline: none;
+    border: 1px solid #D7D5E2;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.myTextarea {
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.subBtn {
+    padding: 10px 20px;
+    background-color: rgba(0, 128, 0, 0.658);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.subBtn:hover {
+    background-color: rgba(0, 128, 0, 0.514);
+}
+
+.zipcode::-webkit-inner-spin-button,
+.zipcode::-webkit-outer-spin-button {
+    display: none;
+}
+
+
+
+/* .........................Media query............................. */
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .header {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        width: 100%;
+        padding-right: 10px;
+    }
+
+    .selectstate {
+        width: 50%;
+    }
+
+    .details {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        margin-right: 20px;
+        /* flex-direction: column; */
+    }
+
+    .details label {
+        display: flex;
+        align-items: start;
+        visibility: hidden;
+        display: none;
+    }
+
+    .details input {
+        width: 100%;
+    }
+
+    #myForm {
+        display: flex;
+        width: 100%;
+        margin: 0px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .adddetail label {
+        display: none;
+    }
+
+    .adddetail input,
+    #stateSelect,
+    textarea {
+        width: 100%;
+    }
+
+    .upload-area {
+        width: 80%;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+
+    .header {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        width: 100%;
+        padding-right: 10px;
+    }
+
+    .selectstate {
+        width: 50%;
+    }
+
+    .details {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        margin-right: 20px;
+        /* flex-direction: column; */
+    }
+
+    .details label {
+        display: flex;
+        align-items: start;
+        visibility: hidden;
+        display: none;
+    }
+
+    .details input {
+        width: 100%;
+    }
+
+    #myForm {
+        display: flex;
+        width: 100%;
+        margin: 0px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .adddetail label {
+        display: none;
+    }
+
+    .adddetail input,
+    #stateSelect,
+    textarea {
+        width: 100%;
+    }
+
+    .upload-area {
+        width: 90%;
+        margin-right: 20px;
+    }
+}
